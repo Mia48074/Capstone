@@ -7,12 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
   </head>
   <body>
+    <div class="container">
     <h1 class="display-1 border border-danger m-5 p-5 text-center">Lost Fluffball</h1>
     <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
-    <p class="text-center">I lost my bunnies</p>
-    <p class="text-center">Their names are <strong>Grumpus, Cranky, and Bashful</strong></p>
-    <p class="text-center">Do not approach if you find them</p>
-    <p class="text-center">Please email instead</p>
+    <p class="fg-secondary text-center">Attention! Three heavily armed (with carrots) fugitive clouds have broken out of captivity</p>
+    <p class="fg-primary text-center">They answer to their street names: <strong>Grumpus, Cranky, and Bashful</strong></p>
+    <p class="fg-success text-center">DO NOT APPROACH! They are known to hypnotize unsuspecting humans with tactical nose twitches and aggressive treat begging</p>
+    <p class="fg-danger text-center">If spotted, make no sudden movements. Email immediately before they chew through another armchair</p>
     <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -36,7 +37,7 @@
 </div>
 
 <div class="mb-3">
-  <a href = "https://www.youtube.com/watch?v=IWrK7sXK3Vw" target="_blank" class="btn btn-solid theme-danger btn-lg" id="button1">Bunny Hopping Around</a>
+  <a href = "https://www.youtube.com/watch?v=IWrK7sXK3Vw" target="_blank" class="btn btn-solid theme-danger btn-lg" id="button1">Evidence of Hoppiness</a>
 </div>
 
 <div class="mb-3">
@@ -44,11 +45,17 @@
   Warning: High Levels of Cuteness(viewer discretion advised!)</a>
 </div>
 <form>
-   <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname">
-  <label for="email">Email:</label>
-  <input type="text" id="email" name="email">
-  <input type="submit" value="Submit">
+  <div class="mb-3">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name">
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+</div>
 </body>
 </html>
